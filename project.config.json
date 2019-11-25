@@ -1,47 +1,20 @@
 {
-	"description": "项目配置文件。",
-	"packOptions": { //打包配置选项
-		"ignore": [] //配置打包时对符合指定规则的文件或文件夹进行忽略，跳过打包的过程，这些文件或文件夹不会出现在预览或上传的结果内
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
 	},
-	"setting": {//项目设置
-		"urlCheck": false,//检查安全域名和TLS版本
-		"es6": true,      //是否启用es6转es5
-		"postcss": true,  //上传代码时样式是否自动补全
-		"minified": true, //上传代码时是否自动压缩
-		"newFeature": true, //新特征，文档中未描述
-		"autoAudits": true,
-		"uglifyFileName": true
+	"miniprogramRoot": "miniprogram/",
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"projectname": "fan-xcx",
+	"scripts": {
+		"beforeCompile": "npm run tsc",
+		"beforePreview": "npm run tsc",
+		"beforeUpload": "npm run tsc"
 	},
-	"compileType": "miniprogram",//编译类型，miniprogram为普通小程序项目
-	"libVersion": "2.8.0", //基础库版本
-	"appid": "wx472379335378834b", //AppID
-	"projectname": "fan-xcx", //项目名字，只在新建项目时读取,urlDecode解码(路径解码)
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
+	"setting": {},
+	"appid": "wx472379335378834b",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"condition": { //编译模式，增加编译模式时，会添加到下面的对应数组
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": { //插件
-			"current": -1,
-			"list": []
-		},
-		"game": { //小游戏
-			"currentL": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": []
-		}
-	}
+	"condition": {}
 }
